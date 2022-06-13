@@ -14,14 +14,7 @@
  * limitations under the License.
  */
 
-import {
-  getInput,
-  getBooleanInput,
-  warning as logWarning,
-  setFailed,
-  setOutput,
-  setSecret,
-} from '@actions/core';
+import { getBooleanInput, getInput, warning as logWarning, setFailed, setOutput, setSecret } from '@actions/core';
 import { Credential, parseCredential, errorMessage } from '@google-github-actions/actions-utils';
 
 import { Client } from './client';
